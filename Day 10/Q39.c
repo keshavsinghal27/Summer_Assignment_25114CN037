@@ -1,0 +1,40 @@
+// Write a program to print number pyaramid
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,j;
+
+    printf("Enter the number of rows: ");
+    scanf("%d",&n);
+
+    for(i=1 ; i<=n ; i++)
+    {
+        //for printing spaces
+
+        for(j=1 ; j<=n-i ; j++)
+        {
+            printf(" ");
+        }
+
+        //for printing in ascending order
+
+        for (j=1 ; j<=i ; j++)
+        {
+            printf("%d",j);
+        }
+
+        //for printing in descending order
+
+        for(j=i-1 ; j>=1 ; j--)
+        {
+            printf("%d",j);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
